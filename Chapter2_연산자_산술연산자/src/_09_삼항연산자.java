@@ -31,7 +31,7 @@ public class _09_삼항연산자 {
 //			System.out.println("홀수입니다.");
 //		}
 //		
-		
+		scan.close();
 		
 		
 	}

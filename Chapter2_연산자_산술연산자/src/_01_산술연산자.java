@@ -88,5 +88,6 @@ public class _01_산술연산자 {
 		double avg = total/3.0;         // 평균값을 계산할 때, 실수가 나와야하므로 데이터형에 double 부여
 		//System.out.println("평균은="+avg);
 		System.out.printf("ㅇㅇ:%.2f",avg);	// 평균값에서 2자리까지만 출력할 때 명령어 이름(평균):%.2f, 변수이름 (마지막 자리는 반올림)
+		scan.close();
 	}
 }
