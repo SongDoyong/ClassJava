@@ -21,7 +21,8 @@ public class _문제_12 {
 		double avg=total/10.0;
 		System.out.println(total);
 		System.out.println(avg);
-		
+		System.out.printf("평균:%.2f",avg);
+		System.out.printf("\n%.2f",89.395);		// ==> 반올림
 		
 	}
 }
