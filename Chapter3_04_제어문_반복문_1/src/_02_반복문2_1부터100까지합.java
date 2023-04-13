@@ -37,5 +37,17 @@ public class _02_반복문2_1부터100까지합 {
 			System.out.println();
 		}
 		
+		for(int i=5;i>=0;i--)
+		{
+			for(int j=0;j<i;j++)
+			{
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+		
+		
+		
+		
 	}
 }
