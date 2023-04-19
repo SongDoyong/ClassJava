@@ -1,7 +1,10 @@
 package com.sist.music;
 
+
 class MusicData
 {
+	
+	
 	// 파일 or Oracle	=> 데이터 모아놓은 곳
 	static String[] title={
 	        "Your Lights",
