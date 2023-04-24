@@ -20,5 +20,22 @@ public class _06_문자열_split {
 		}
 		
 		
+		String mm = "원조김밥"
+				+ " 2,500원"
+				+ "쌀떡볶이"
+				+ " 3,500원"
+				+ "찹쌀순대"
+				+ " 3,500원"
+				+ "라면"
+				+ " 3,500원"
+				+ "쫄면"
+				+ " 5,500원";
+		
+		String[] mms=mm.split("원");
+		for(String a:mms)
+		{
+			System.out.println(a);
+		}
+		
 	}
 }	

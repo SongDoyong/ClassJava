@@ -24,6 +24,6 @@ public class _04_문자열_length와trim {
 		System.out.println(s.trim().length()); 					// 앞 뒤 공백 제거	(가운데 공백은 제거X)
 		
 		
-		
+		System.out.println(s.trim());
 	}
 }
