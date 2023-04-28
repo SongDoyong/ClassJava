@@ -17,8 +17,8 @@ public class SeoulSystem
 		// 데이터를 읽어서 메모리에 저장 => 초기화
 		try
 		{
-			StringBuffer sb=new StringBuffer();				// 버퍼로 데이터 모아오기
-			int i=0;
+			StringBuffer sb=new StringBuffer();				// 버퍼로 데이터 모아오기 --> sb라는 스트링버퍼에 임시로 데이터가 모여있는 상태
+			int i=0;										// 이 데이터를 스트링 배열에 다시 정리해서 넣어주기
 			FileReader fr=new FileReader("c:\\javaDev\\seoul_location.txt");
 			while((i=fr.read())!=-1)
 			{
@@ -91,7 +91,7 @@ public class SeoulSystem
 		System.out.print("메뉴 선택:");
 		return scan.nextInt();
 	}
-	// 검색 --> 이름
+	// 검색어가 포함된 목록 가져오기
 	public SeoulLocationVO[] nameFind(String fd)				// 리턴값이 배열 자체
 	{
 		int count=0;
@@ -141,6 +141,7 @@ public class SeoulSystem
 		return seoul;				
 	}
 	// 상세보기
+	// 실행 process
 	public void process() throws ArrayIndexOutOfBoundsException
 	{
 		System.out.println("★★★★★★★★★ SIST 영화 ★★★★★★★★★");
@@ -219,12 +220,6 @@ public class SeoulSystem
 			}
 		}
 	}
-	
-	public static void main(String[] args)
-	{
-		
-		
-		
 //		SeoulSystem ss=new SeoulSystem();
 //		for(SeoulLocationVO vo:datas)
 //		{
@@ -234,5 +229,5 @@ public class SeoulSystem
 //			System.out.println("=================");
 //			
 //		}
-	}
+	
 }
